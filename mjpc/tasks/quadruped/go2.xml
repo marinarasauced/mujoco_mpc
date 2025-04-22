@@ -8,27 +8,27 @@
       <geom friction="0.6" margin="0.001" condim="1"/>
       <joint axis="0 1 0" damping="2" armature="0.01" frictionloss="0.2"/>
       <!-- <motor ctrlrange="-23.7 23.7"/> -->
-      <position kp="100" forcerange="-23.7 23.7"/>
+      <!-- <position kp="100" forcerange="-23.7 23.7"/> -->
       <!-- <position kp="60" forcerange="-23.7 23.7"/> -->
-
+      <general gainprm="60" biasprm="0 -60 -5"/>
       <default class="abduction">
         <joint axis="1 0 0" range="-1.0472 1.0472"/>
-        <position ctrlrange="-1.0472 1.0472"/>
+        <general ctrlrange="-1.0472 1.0472"/>
       </default>
       <default class="hip">
         <default class="front_hip">
           <joint range="-1.5708 3.4907"/>
-          <position ctrlrange="-1.5708 3.4907"/>
+          <general ctrlrange="-1.5708 3.4907"/>
         </default>
         <default class="back_hip">
           <joint range="-0.5236 4.5379"/>
-          <position ctrlrange="-0.5236 4.5379"/>
+          <general ctrlrange="-0.5236 4.5379"/>
         </default>
       </default>
       <default class="knee">
         <joint range="-2.7227 -0.83776"/>
         <!-- <motor ctrlrange="-45.43 45.43"/> -->
-        <position ctrlrange="-2.7227 -0.83776"/>
+        <general ctrlrange="-2.7227 -0.83776"/>
       </default>
       <default class="visual">
         <geom type="mesh" contype="0" conaffinity="0" group="2"/>
@@ -70,7 +70,7 @@
   <worldbody>
     <body name="trunk" pos="0 0 0.445" childclass="go2">
       <site name="head" pos="0.3 0 0" rgba="1 0 0 1" size="0.02" group="5"/>
-      <inertial pos="0.021112 0 -0.005366" quat="-0.000543471 0.713435 -0.00173769 0.700719" mass="6.921"
+      <inertial pos="0.021112 0 -0.005366" quat="-0.000543471 0.713435 -0.00173769 0.700719" mass="7.521"
         diaginertia="0.107027 0.0980771 0.0244531"/>
       <freejoint/>
       <geom mesh="base_0" material="black" class="visual"/>

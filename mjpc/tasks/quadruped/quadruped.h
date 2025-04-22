@@ -108,7 +108,7 @@ class QuadrupedFlat : public Task {
     // notes:
     // - walk is never triggered by auto-gait
     // - canter actually has a wider range than gallop
-
+  
     // automatic gait switching: time constant for com speed filter
     constexpr static double kAutoGaitFilter = 0.2;    // second
 
