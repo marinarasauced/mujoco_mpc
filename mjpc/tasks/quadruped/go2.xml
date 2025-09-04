@@ -10,7 +10,7 @@
       <!-- <motor ctrlrange="-23.7 23.7"/> -->
       <!-- <position kp="100" forcerange="-23.7 23.7"/> -->
       <!-- <position kp="60" forcerange="-23.7 23.7"/> -->
-      <general biastype="affine" gainprm="60" biasprm="0 -60 -5"/>
+      <general gainprm="60" biasprm="0 -60 -5"/>
       <default class="abduction">
         <joint axis="1 0 0" range="-1.0472 1.0472"/>
         <general ctrlrange="-1.0472 1.0472"/>
